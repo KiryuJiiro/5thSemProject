@@ -1,0 +1,29 @@
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+        <form class="d-flex position-relative" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+            <div style="position: relative;"> <button class="btn btn-outline-secondary ms-2" type="button" onclick="toggleFilter()">Filter</button>
+                <div id="filterOptions" class="filter-options">
+                    <label class="form-label">
+                        Type:
+                        <select class="form-select">
+                            <option value="all">All</option>
+                            <option value="tv">TV</option>
+                            <option value="movie">Movie</option>
+                        </select>
+                    </label>
+                    <label class="form-label mt-2">
+                        Genre:
+                        <select class="form-select">
+                            <option value="all">All</option>
+                            <option value="action">Action</option>
+                            <option value="adventure">Adventure</option>
+                        </select>
+                    </label>
+                    <button type="button" class="btn btn-primary mt-3" onclick="applyFilter()">Apply Filter</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</nav>
